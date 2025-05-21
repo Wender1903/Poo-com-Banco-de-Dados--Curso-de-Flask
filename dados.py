@@ -8,7 +8,7 @@ cursor = conexao.cursor()
 cursor.execute(
     """
         INSERT INTO series(nome, ano, nota)
-        VALUES ('Tudo Bem Não Ser Normal', 2020, 8.6)
+        VALUES ('Suits', 2011, 8.4)
     """
 
 )
