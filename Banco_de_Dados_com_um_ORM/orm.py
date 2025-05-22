@@ -2,7 +2,7 @@ from sqlalchemy import create_engine, Column, Integer, String, Float
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-engine = create_engine("sqlite:///banco.db", echo=True)
+engine = create_engine("sqlite:///Banco_de_Dados_com_um_ORM/banco.db", echo=True)
 Base = declarative_base()
 
 class Serie(Base):
@@ -38,7 +38,7 @@ def atualizar_series(id, nome=None, ano=None, nota=None):
         if nome is not None:
             serie.nome = nome
         if ano is not None:
-            serie.ano = nota
+            serie.ano = ano
         if nota is not None:
             serie.nota = nota
 
